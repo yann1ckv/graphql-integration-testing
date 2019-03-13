@@ -5,7 +5,7 @@ import fetch from 'node-fetch';
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
-  uri: 'http://localhost:4000/',
+  uri: 'http://localhost:4000/graphql',
   fetch
 });
 
