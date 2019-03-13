@@ -1,0 +1,37 @@
+{
+  "name": "@mistergreen/graphql-testing",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "ts-node ./src/index",
+    "serve": "nodemon yarn start",
+    "test": "JEST_JUNIT_OUTPUT=./src/tests/test-results/junit.xml jest --runInBand --config jest.config.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "graphql-tag": "^2.10.1",
+    "jest": "^24.5.0",
+    "node-fetch": "^2.3.0",
+    "nodemon": "^1.18.10",
+    "ts-jest": "^24.0.0"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-client": "^2.5.1",
+    "apollo-link-http": "^1.5.12",
+    "apollo-server-express": "^2.4.8",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1"
+  },
+  "nodemonConfig": {
+    "ext": "js,json,ts,graphql",
+    "ignore": [
+      ".idea",
+      ".get",
+      "dist"
+    ],
+    "verbose": true
+  }
+}
