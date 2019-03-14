@@ -5,7 +5,7 @@
   "scripts": {
     "start": "ts-node ./src/index",
     "serve": "nodemon yarn start",
-    "test": "JEST_JUNIT_OUTPUT=./src/tests/test-results/junit.xml jest --runInBand --config jest.config.json"
+    "test": "jest --runInBand --config jest.config.json"
   },
   "author": "",
   "license": "ISC",
